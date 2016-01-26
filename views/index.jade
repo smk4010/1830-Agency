@@ -1,0 +1,616 @@
+extends layout
+
+block content
+    .color_section
+      section#mainslider.bg-color3
+        .slider-wrapper
+          .responisve-container
+            .slider
+              .fs_loader
+              .slide
+                img(src='/images/example/slide1.png', alt='', width='880', height='700', data-position='102,380', data-in='left', data-delay='0', data-out='right')
+                p.fs_dark(data-position='250,0', data-in='top', data-step='0', data-out='top')
+                  strong Everything
+                p.fs_light(data-position='322,0', data-in='right', data-step='0', data-delay='400') You Need
+                p.fs_btn(data-position='480,0', data-in='bottom', data-step='0', data-delay='1000')
+                  a.theme_btn(href='#') Get More Info
+              .slide(data-in='slideLeft')
+                img(src='/images/example/slide4.png', alt='', width='500', height='929', data-position='125,624', data-in='bottom', data-delay='0', data-out='bottom')
+                p.fs_dark(data-position='250,0', data-in='top', data-step='0', data-out='top')
+                  strong Welcome
+                  |  To
+                p.fs_light(data-position='322,0', data-in='right', data-step='0', data-delay='400') SimpleFlex
+                p.fs_btn(data-position='480,0', data-in='bottom', data-step='0', data-delay='1000')
+                  a.theme_btn(href='#') Get More Info
+              .slide(data-in='slideLeft')
+                img(src='/images/example/slide3.png', alt='', width='700', height='622', data-position='90,485', data-in='top', data-delay='0', data-out='top')
+                p.fs_dark(data-position='250,0', data-in='top', data-step='0', data-out='top')
+                  strong Fully
+                p.fs_light(data-position='322,0', data-in='right', data-step='0', data-delay='400') Responsive
+                p.fs_btn(data-position='480,0', data-in='bottom', data-step='0', data-delay='1000')
+                  a.theme_btn(href='#') Get More Info
+    section#features.grey_section
+      .container
+        .row
+          .col-sm-12.text-center
+            h2.block-header About Us
+            p
+              | Lorem ipsum dolor sit amet, consectetur
+              br
+              | adipisicing elit. Nam, itaque.
+        .row
+          .block.col-sm-4
+            .single_teaser.intro_images.to_fade
+              .introimg
+                img(src='example/icon-1.png', alt='')
+              h3
+                a(href='#') Modern
+              p.introtext Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+          .block.col-sm-4
+            .single_teaser.intro_images.border-color2.to_fade
+              .introimg
+                img(src='example/icon-2.png', alt='')
+              h3
+                a(href='#') Simple
+              p.introtext Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+          .block.col-sm-4
+            .single_teaser.intro_images.border-color3.to_fade
+              .introimg
+                img(src='example/icon-3.png', alt='')
+              h3
+                a(href='#') Flexible
+              p.introtext Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+    section#services.dark_section
+      .container
+        .row
+          .col-sm-12.text-center
+            h2.block-header Our Services
+            p
+              | Lorem ipsum dolor sit amet, consectetur
+              br
+              | adipisicing elit. Nam, itaque.
+        .row
+          .block.col-sm-6
+            .left_icons.style2.to_slide_left
+              .dxsingle_teaser_left
+                i.rt-icon-camera-outline
+              .dxsingle_teaser_right
+                h3 Photo
+                |               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet.
+          .block.col-sm-6
+            .left_icons.style2.border-color2.to_slide_right
+              .dxsingle_teaser_left
+                i.rt-icon-video-outline
+              .dxsingle_teaser_right
+                h3 Video
+                |               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet.
+        .row
+          .block.col-sm-6
+            .left_icons.style2.border-color3.to_slide_left
+              .dxsingle_teaser_left
+                i.rt-icon-cog
+              .dxsingle_teaser_right
+                h3 Web Development
+                |               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet.
+          .block.col-sm-6
+            .left_icons.style2.to_slide_right
+              .dxsingle_teaser_left
+                i.rt-icon-mobile
+              .dxsingle_teaser_right
+                h3 Mobile Development
+                |               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet.
+    section#progress.color_section.bg-color3
+      .container
+        .row.to_fade
+          .block.col-sm-3
+            .arctcle.to_fade
+              .single_teaser.icons.style2
+                .icons_introimg.image-icon
+                  i.rt-icon-user3
+                h2 2500
+                h3 Happy Clients
+          .block.col-sm-3
+            .arctcle
+              .single_teaser.icons.style2
+                .icons_introimg.image-icon
+                  i.rt-icon-bulb
+                h2 650
+                h3 Projects made
+          .block.col-sm-3
+            .arctcle
+              .single_teaser.icons.style2
+                .icons_introimg.image-icon
+                  i.rt-icon-paperplane
+                h2 5780
+                h3 Letters Sent
+          .block.col-sm-3
+            .arctcle
+              .single_teaser.icons.style2
+                .icons_introimg.image-icon
+                  i.rt-icon-pen2
+                h2 3400
+                h3 Briefs Wrote
+    section#prices.grey_section
+      .container
+        .row
+          .col-sm-12.text-center
+            h2.block-header Our Prices
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        .row.to_fade
+          .col-sm-12
+            .col-sm-4
+              ul.pricing-table.style2
+                li.plan-name
+                  p Basic Plan
+                li.plan-price
+                  span $
+                  span 39
+                  p Per Month
+                li.features-list
+                  ul
+                    li Feature 01
+                    li Feature 02
+                    li Feature 03
+                    li Feature 04
+                    li Feature 05
+                li.call-to-action
+                  a.theme_btn(href='#') Sign Up Now
+            .col-sm-4
+              ul.pricing-table.style2.border-color2
+                li.plan-name
+                  p Advanced Plan
+                li.plan-price
+                  span $
+                  span 49
+                  p Per Month
+                li.features-list
+                  ul
+                    li Feature 01
+                    li Feature 02
+                    li Feature 03
+                    li Feature 04
+                    li Feature 05
+                li.call-to-action
+                  a.theme_btn(href='#') Sign Up Now
+            .col-sm-4
+              ul.pricing-table.style2.border-color3
+                li.plan-name
+                  p Premium Plan
+                li.plan-price
+                  span $
+                  span 99
+                  p Per Month
+                li.features-list
+                  ul
+                    li Feature 01
+                    li Feature 02
+                    li Feature 03
+                    li Feature 04
+                    li Feature 05
+                li.call-to-action
+                  a.theme_btn(href='#') Sign Up Now
+    section#skills.dark_section
+      .container
+        .row
+          .col-sm-12.text-center
+            h2.block-header Our Skills
+            p
+              | SimpleFlex is focusing on
+              br
+              | Web Design / WP Development / HTML Integration
+        .row.text-center.to_fade
+          .col-sm-3
+            span.chart(data-percent='75')
+              span.percent
+            h4.text-center Web Design
+            p Lorem impum dolor sit amet tation ullamcorper suscipit.
+          .col-sm-3
+            span.chart(data-percent='62')
+              span.percent
+            h4.text-center WordPress
+            p Lorem impum dolor sit amet tation ullamcorper suscipit.
+          .col-sm-3
+            span.chart(data-percent='57')
+              span.percent
+            h4.text-center jQuery
+            p Lorem impum dolor  tation ullamcorper suscipit.sit amet 
+          .col-sm-3
+            span.chart(data-percent='87')
+              span.percent
+            h4.text-center HTML/CSS
+            p Lorem impum dolor tation ullamcorper suscipit. sit amet 
+    section#testimonials.parallax
+      .container
+        .row.to_fade
+          .col-sm-12
+            #carousel-testimonials.carousel.dxcarousel.slide.widget_testimonials.block
+              a.carousel-control.left(data-slide='prev', href='#carousel-testimonials')
+              a.carousel-control.right(data-slide='next', href='#carousel-testimonials')
+              .carousel-inner
+                .item.active
+                  p.carousel-introtext
+                    span
+                      | Design to express,
+                      br
+                      | not to impress.
+                  p.carousel-readmore
+                    | John Tanedo
+                .item
+                  p.carousel-introtext
+                    span
+                      | Lorem ipsum dolor
+                      br
+                      | sit amet consectetur.
+                  p.carousel-readmore
+                    | Catrin Jhonson
+    section#process.grey_section
+      .container
+        .row
+          .col-sm-12.text-center
+            h2.block-header Latest Projects
+            p
+              | Lorem ipsum dolor sit amet, consectetur
+              br
+              | adipisicing elit. Nam, itaque.
+        .row
+          .col-sm-12
+            .flexslider
+              ul.slides
+                li
+                  img.fullwidthimage(alt='Full width image', src='example/latest1.jpg')
+                li
+                  img.fullwidthimage(alt='Full width image', src='example/latest2.jpg')
+                li
+                  img.fullwidthimage(alt='Full width image', src='example/latest3.jpg')
+    section#team.dark_section
+      .container
+        .row
+          .col-sm-12.text-center
+            h2.block-header Meet The Team
+            p
+              | A proud group of individuals who came together in a
+              br
+              |             perfect unity to present you with this
+        .row.to_fade
+          .block.col-sm-6.col-md-3
+            .thumbnail
+              img(src='example/team1.jpg', alt='team')
+              .caption
+                h4 James Dylan
+                p Creative Director
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.
+              p.team-social
+                a.socialico-facebook(href='#', title='Facebook') #
+                a.socialico-twitter(href='#', title='Twitter') #
+                a.socialico-dribble(href='#', title='LinkedIn') #
+          .block.col-sm-6.col-md-3
+            .thumbnail
+              img(src='example/team2.jpg', alt='team')
+              .caption
+                h4 Janet Doe
+                p Creative Director
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.
+              p.team-social
+                a.socialico-facebook(href='#', title='Facebook') #
+                a.socialico-flickr(href='#', title='Twitter') #
+                a.socialico-linkedin(href='#', title='LinkedIn') #
+          .block.col-sm-6.col-md-3
+            .thumbnail
+              img(src='example/team3.jpg', alt='team')
+              .caption
+                h4 Joe Smith
+                p Creative Director
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.
+              p.team-social
+                a.socialico-twitter(href='#', title='Twitter') #
+                a.socialico-facebook(href='#', title='Facebook') #
+                a.socialico-google(href='#', title='LinkedIn') #
+          .block.col-sm-6.col-md-3
+            .thumbnail
+              img(src='example/team4.jpg', alt='team')
+              .caption
+                h4 Johanna Smith 
+                p Creative Director
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.
+              p.team-social
+                a.socialico-twitter(href='#', title='Twitter') #
+                a.socialico-facebook(href='#', title='Facebook') #
+                a.socialico-linkedin(href='#', title='LinkedIn') #
+    section#tweets
+      .container
+        .row
+          .col-sm-12
+            .twitter
+    section#partners
+      .container
+        .row.to_fade
+          .col-sm-12.text-center
+            h2.block-header Our Partners
+        .row
+          .col-sm-12
+            .owl-carousel
+              .item
+                img(src='example/partner1.png', alt='partner')
+              .item
+                img(src='example/partner2.png', alt='partner')
+              .item
+                img(src='example/partner3.png', alt='partner')
+              .item
+                img(src='example/partner4.png', alt='partner')
+              .item
+                img(src='example/partner5.png', alt='partner')
+              .item
+                img(src='example/partner6.png', alt='partner')
+              .item
+                img(src='example/partner1.png', alt='partner')
+              .item
+                img(src='example/partner2.png', alt='partner')
+              .item
+                img(src='example/partner3.png', alt='partner')
+              .item
+                img(src='example/partner4.png', alt='partner')
+    section#portfolio.grey_section
+      .container
+        .row
+          .col-sm-12.text-center
+            h2.block-header Our Portfolio
+            p
+              | Lorem ipsum dolor sit amet, consectetur
+              br
+              | adipisicing elit. Nam, itaque.
+        #portfolio_wrapper.row
+          .text-center.filters.col-sm-12
+            ul#filtrable
+              li
+                a.selected(data-filter='*', href='#') All
+              li
+                a(data-filter='.graphicdesign', href='#') Graphic Design
+              li
+                a(data-filter='.photography', href='#') Photography
+              li
+                a(data-filter='.webdesign', href='#') Web Design
+            .clearfix
+          // Items
+          ul#portfolioContainer.items-row.row.cols-3.portfolio.filtrable.clearfix.isotope
+            li.item.col-sm-6.col-md-4.isotope-item.graphicdesign.webdesign
+              // Image
+              .portfolio_item_image
+                img(alt='', src='example/intro_img1.jpg')
+                .portfolio_links
+                  a.p-view.prettyPhoto(title='', rel='prettyPhoto[pp_gal]', href='example/intro_img1.jpg')
+                  span.heart 19
+                  a.p-link(title='', href='./gallery-single.html')
+              .item_title
+                h4
+                  a(href='./gallery-single.html') Stet clita gubergren
+            li.item.col-sm-6.col-md-4.isotope-item.photography.webdesign
+              // Image
+              .portfolio_item_image
+                img(alt='', src='example/intro_img2.jpg')
+                .portfolio_links
+                  a.p-view.prettyPhoto(title='', rel='prettyPhoto[pp_gal]', href='example/intro_img2.jpg')
+                  span.heart 19
+                  a.p-link(title='', href='./gallery-single.html')
+              .item_title
+                h4
+                  a(href='./gallery-single.html') Stet clita gubergren
+            li.item.col-sm-6.col-md-4.isotope-item.photography.webdesign
+              // Image
+              .portfolio_item_image
+                img(alt='', src='example/intro_img3.jpg')
+                .portfolio_links
+                  a.p-view.prettyPhoto(title='', rel='prettyPhoto[pp_gal]', href='example/intro_img3.jpg')
+                  span.heart 19
+                  a.p-link(title='', href='./gallery-single.html')
+              .item_title
+                h4
+                  a(href='./gallery-single.html') Stet clita gubergren
+            li.item.col-sm-6.col-md-4.isotope-item
+              // Image
+              .portfolio_item_image
+                img(alt='', src='example/intro_img4.jpg')
+                .portfolio_links
+                  a.p-view.prettyPhoto(title='', rel='prettyPhoto[pp_gal]', href='example/intro_img4.jpg')
+                  span.heart 19
+                  a.p-link(title='', href='./gallery-single.html')
+              .item_title
+                h4
+                  a(href='./gallery-single.html') Stet clita gubergren
+            li.item.col-sm-6.col-md-4.isotope-item.graphicdesign.webdesign
+              // Image
+              .portfolio_item_image
+                img(alt='', src='example/intro_img5.jpg')
+                .portfolio_links
+                  a.p-view.prettyPhoto(title='', rel='prettyPhoto[pp_gal]', href='example/intro_img5.jpg')
+                  span.heart 19
+                  a.p-link(title='', href='./gallery-single.html')
+              .item_title
+                h4
+                  a(href='./gallery-single.html') Stet clita gubergren
+            li.item.col-sm-6.col-md-4.isotope-item
+              // Image
+              .portfolio_item_image
+                img(alt='', src='example/intro_img6.jpg')
+                .portfolio_links
+                  a.p-view.prettyPhoto(title='', rel='prettyPhoto[pp_gal]', href='example/intro_img6.jpg')
+                  span.heart 19
+                  a.p-link(title='', href='./gallery-single.html')
+              .item_title
+                h4
+                  a(href='./gallery-single.html') Stet clita gubergren
+            li.item.col-sm-6.col-md-4.isotope-item.photography.webdesign
+              // Image
+              .portfolio_item_image
+                img(alt='', src='example/intro_img7.jpg')
+                .portfolio_links
+                  a.p-view.prettyPhoto(title='', rel='prettyPhoto[pp_gal]', href='example/intro_img7.jpg')
+                  span.heart 19
+                  a.p-link(title='', href='./gallery-single.html')
+              .item_title
+                h4
+                  a(href='./gallery-single.html') Stet clita gubergren
+            li.item.col-sm-6.col-md-4.isotope-item.graphicdesign.webdesign
+              // Image
+              .portfolio_item_image
+                img(alt='', src='example/intro_img8.jpg')
+                .portfolio_links
+                  a.p-view.prettyPhoto(title='', rel='prettyPhoto[pp_gal]', href='example/intro_img8.jpg')
+                  span.heart 19
+                  a.p-link(title='', href='./gallery-single.html')
+              .item_title
+                h4
+                  a(href='./gallery-single.html') Stet clita gubergren
+        // eof portfolio_wrapper
+        .row
+          .col-sm-12
+            p.text-center.loadmore
+              a.theme_btn.inverse(href='./gallery.html') View More
+    section#belowcontent.dark_section
+      .container
+        .row
+          .col-sm-12.text-center
+            h2.block-header Our Blog
+            p
+              | Latest from our blog, nam liber tempor cum soluta nobis
+              br
+              | eleifend option congue nihil.
+        .row.widget_from_blog
+          .col-sm-6
+            article.post.format-standard.primary_post
+              header.entry-header
+                .entry-thumbnail
+                  img.post-image(src='example/blog-primary.jpg', alt='')
+              // .entry-header
+              .entry-content
+                h2.entry-title
+                  a(href='./blog-single.html', rel='bookmark') Post With Image
+                p.date
+                  span.entry-date Dec 6, 2013
+                p
+                  | At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim adinim veniam.
+              // .entry-content
+              .entry-share
+                p.text-center
+                  a.socialico-facebook(href='#', title='Facebook') #
+                  a.socialico-twitter(href='#', title='Twitter') #
+                  a.socialico-google(href='#', title='Google') #
+              // .entry-share
+          .col-sm-6
+            .row
+              article.post.format-video.secondary_post.clearfix
+                .col-sm-6
+                  header.entry-header
+                    .entry-thumbnail
+                      img.post-image(src='example/blog-secondary1.jpg', alt='')
+                      a.video-view.prettyPhoto(title='', rel='prettyPhoto', href='http://www.youtube.com/watch?v=Vpg9yizPP_g')
+                .col-sm-6
+                  .entry-content
+                    h2.entry-title
+                      a(href='./blog-single.html', rel='bookmark') Post With Video
+                    p.date
+                      span.entry-date Dec 8, 2013
+                    p
+                      | At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim adinim veniam.
+                  // .entry-content
+                  .entry-share
+                    p.text-center
+                      a.socialico-facebook(href='#', title='Facebook') #
+                      a.socialico-twitter(href='#', title='Twitter') #
+                      a.socialico-google(href='#', title='Google') #
+                  // .entry-share
+            .row
+              article.post.format-gallery.secondary_post.clearfix
+                .col-sm-6
+                  header.entry-header
+                    .entry-thumbnail
+                      #carousel-generic.carousel.slide
+                        // Indicators
+                        ol.carousel-indicators
+                          li.active(data-target='#carousel-generic', data-slide-to='0')
+                          li(data-target='#carousel-generic', data-slide-to='1')
+                          li(data-target='#carousel-generic', data-slide-to='2')
+                        // Wrapper for slides
+                        .carousel-inner
+                          .item.active
+                            img(src='example/blog-secondary2.jpg', alt='image')
+                          .item
+                            img(src='example/blog-secondary3.jpg', alt='image')
+                          .item
+                            img(src='example/blog-secondary4.jpg', alt='image')
+                        // Controls
+                        a.left.carousel-control(href='#carousel-generic', data-slide='prev')
+                          span.icon-prev
+                        a.right.carousel-control(href='#carousel-generic', data-slide='next')
+                          span.icon-next
+                .col-sm-6
+                  .entry-content
+                    h2.entry-title
+                      a(href='./blog-single.html', rel='bookmark') Post With Image
+                    p.date
+                      span.entry-date August 8, 2013
+                    p
+                      | At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim adinim veniam.
+                  // .entry-content
+                  .entry-share
+                    p.text-center
+                      a.socialico-facebook(href='#', title='Facebook') #
+                      a.socialico-twitter(href='#', title='Twitter') #
+                      a.socialico-google(href='#', title='Google') #
+                  // .entry-share
+            // eof row
+          // eof col-sm6
+        .row
+          .col-sm-12
+            p.text-center.loadmore
+              a.theme_btn.inverse(href='./blog.html') View All
+    section#info.color_section.bg-color1
+      .container
+        .row
+          .col-sm-12.text-center
+            h5.contact-phone.to_fade +91 544 567 8943
+            h2.contact-email.to_fade
+              span
+                a(href='mailto:info@simpleflex.com') info@simpleflex.com
+            p.contact-address.to_fade 8605 Santa Monica Blvd, Los Angeles, California 97845, US
+    section#map_wrap
+      #map
+    section#contact.dark_section
+      .container
+        .row
+          .col-sm-12.text-center
+            h2.block-header Get In Touch
+            p
+              | Feel free to contact us at any time, nam liber tempor cum
+              br
+              | soluta nobis eleifend option congue nihil.
+            p#social.text-center
+              a.socialico-facebook(href='#', title='Facebook') #
+              a.socialico-twitter(href='#', title='Twitter') #
+              a.socialico-flickr(href='#', title='Flickr') #
+              a.socialico-google(href='#', title='Google') #
+              a.socialico-linkedin(href='#', title='Lindedin') #
+              a.socialico-dribble(href='#', title='Dribble') #
+              a.socialico-skype(href='#', title='skype') #
+        .row
+          .col-sm-12
+            .contact-form
+              form.contact-form(method='post', action='/')
+                p.contact-form-name
+                  label(for='name')
+                    | Name 
+                    span.required *
+                  input#name.form-control(type='text', aria-required='true', size='30', value='', name='name', placeholder='Name')
+                p.contact-form-email
+                  label(for='email')
+                    | Email 
+                    span.required *
+                  input#email.form-control(type='email', aria-required='true', size='30', value='', name='email', placeholder='Email')
+                p.contact-form-message
+                  label(for='message') Comment
+                  textarea#message.form-control(aria-required='true', rows='8', cols='45', name='message', placeholder='Message')
+                p.contact-form-submit.text-center.vertical-margin-60
+                  input#contact_form_submit.theme_btn.inverse(type='submit', value='Send', name='contact_submit')

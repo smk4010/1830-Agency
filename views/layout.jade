@@ -1,0 +1,166 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Home
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/animations.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    script(src='/javascripts/vendor/modernizr-2.6.2.min.js')
+  body
+    #top
+    section#header.bg-color0
+      .container
+        .row
+          a.navbar-brand(href='#top')
+            img(src='/images/example/logo.png', alt='')
+          .col-sm-12.mainmenu_wrap
+            .main-menu-icon.visible-xs
+              span
+              span
+              span
+            ul#mainmenu.nav.menu.sf-menu.responsive-menu.superfish
+              li
+                a(href='#features') About
+              li
+                a(href='#portfolio') Portfolio
+              li
+                a(href='#belowcontent') Blog
+              li
+                a(href='#info') Contact
+              li.dropdown
+                a(href='./about.html') Pages
+                ul.nav.dropdown-menu
+                  li
+                    a(href='./about.html') About
+                  li
+                    a(href='./gallery-single.html') Gallery Item
+                  li
+                    a(href='./blog.html') Blog
+                  li
+                    a(href='./blog-single.html') Blog Post
+                  li
+                    a(href='./404.html') 404
+                  li
+                    a(href='./contact.html') Contact
+                  li
+                    a(href='./shortcodes.html') Shortcodes
+    
+    block content
+    footer#footer.bg-color0
+      .container
+        .row
+          .col-sm-3.block.widget_text
+            h3 Text Widget
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dolorem, eaque fugit odit obcaecati temporibus est dolor consequatur totam nam facilis soluta maiores eius iste veritatis. Ratione quidem exercitationem quisquam.
+          .block.col-sm-3
+            .block.widget_news
+              h3 Popular Posts
+              ul
+                li.item
+                  span.news_introimg
+                    a(href='#')
+                      img(alt='', src='example/recent_post1.jpg')
+                  .news_right
+                    h5
+                      a(href='#') At vero eos et accusam et justo duo dolores.
+                    span.news-date Dec 24, 2013
+                li.item
+                  span.news_introimg
+                    a(href='#')
+                      img(alt='', src='example/recent_post2.jpg')
+                  .news_right
+                    h5
+                      a(href='#') Sanctus sea sed takimata ut voluptua.
+                    span.news-date Dec 14, 2013
+          .block.col-sm-3.subscribe
+            h3 Newsletter Subscribe
+            p Please, subscribe to our latest news to be updated.
+            form#signup.form-inline(action='/', method='get')
+              .form-group
+                input#mailchimp_email.form-control(name='email', type='email', placeholder='your@email.com')
+              button.theme_btn(type='submit') Send
+              #response
+          .block.col-sm-3
+            h3 Flickr Widget
+            ul#flickr
+    section#copyright.dark_section
+      .container
+        .row
+          .col-sm-12
+            p.text-center
+              | © Copyright 2016. Simpleflex Template by 
+              a(href='http://cmsbluetheme.com/', target='_blank') CMS BlueTheme
+    .preloader
+      .preloaderimg
+    script(src='/javascripts/vendor/respond.min.js')
+    script(src='/javascripts/vendor/placeholders.min.js')
+    script(src='/javascripts/vendor/jquery-1.10.2.min.js')
+    script(src='/javascripts/vendor/bootstrap.min.js')
+    script(src='/javascripts/vendor/hoverIntent.js')
+    script(src='/javascripts/vendor/superfish.js')
+    script(src='/javascripts/vendor/jquery.actual.min.js')
+    script(src='/javascripts/vendor/jquery.elastislide.js')
+    script(src='/javascripts/vendor/jquery.flexslider-min.js')
+    script(src='/javascripts/vendor/jquery.prettyPhoto.js')
+    script(src='/javascripts/vendor/jquery.easing.1.3.js')
+    script(src='/javascripts/vendor/jquery.ui.totop.js')
+    script(src='/javascripts/vendor/jquery.isotope.min.js')
+    script(src='/javascripts/vendor/jquery.easypiechart.min.js')
+    script(src='/javascripts/vendor/jflickrfeed.min.js')
+    script(src='/javascripts/vendor/jquery.sticky.js')
+    script(src='/javascripts/vendor/owl.carousel.min.js')
+    script(src='/javascripts/vendor/jquery.nicescroll.min.js')
+    script(src='/javascripts/vendor/jquery.fractionslider.min.js')
+    script(src='/javascripts/vendor/jquery.scrollTo-min.js')
+    script(src='/javascripts/vendor/jquery.localscroll-min.js')
+    script(src='/javascripts/vendor/jquery.parallax-1.1.3.js')
+    script(src='/javascripts/jquery.tweet.min.js')
+    script(src='/javascripts/plugins.js')
+    script(src='/javascripts/main.js')
+    // Map Scripts
+    script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?sensor=false')
+    script(type='text/javascript').
+      var lat;
+      var lng;
+      var map;
+      //type your address after "address="
+      jQuery.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address=london, baker street, 221b&sensor=false', function(data) {
+      lat = data.results[0].geometry.location.lat;
+      lng = data.results[0].geometry.location.lng;
+      }).complete(function(){
+      dxmapLoadMap();
+      });
+      function attachSecretMessage(marker, message)
+      {
+      var infowindow = new google.maps.InfoWindow(
+      { content: message
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+      });
+      }
+      window.dxmapLoadMap = function()
+      {
+      var center = new google.maps.LatLng(lat, lng);
+      var settings = {
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      zoom: 16,
+      draggable: false,
+      scrollwheel: false,
+      center: center
+      };
+      map = new google.maps.Map(document.getElementById('map'), settings);
+      var marker = new google.maps.Marker({
+      position: center,
+      title: 'Map title',
+      map: map
+      });
+      marker.setTitle('Map title'.toString());
+      //type your map title and description here
+      attachSecretMessage(marker, '<h3>Map title</h3>Map HTML description');
+      }
